@@ -1,0 +1,41 @@
+@base          <bdg:R8LS12870> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R8LS12870 {
+    bda:LG4A47EA4075B344C1
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-02T16:11:09.461Z"^^xsd:dateTime ;
+        adm:logMessage      "created new office"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGB3E0291E607E48E2
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-07-31T13:19:27.069Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:R8LS12870  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R8LS12870 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "0e/R8LS12870.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R8LS12870 ;
+        adm:logEntry        bda:LG4A47EA4075B344C1 , bda:LGB3E0291E607E48E2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R8LS12870  a        :Role ;
+        skos:prefLabel      "gzims pa rta mgo sprul sku skye brgyud/"@bo-x-ewts , "Zimpa Tago Tulku Line"@en ;
+        :isRoot             true .
+}

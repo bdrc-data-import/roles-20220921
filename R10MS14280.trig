@@ -1,0 +1,35 @@
+@base          <bdg:R10MS14280> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R10MS14280 {
+    bda:LGE03EA9844C662CC1
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-06-14T17:08:52.588Z"^^xsd:dateTime ;
+        adm:logMessage      "created office"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:R10MS14280  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R10MS14280 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "ba/R10MS14280.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R10MS14280 ;
+        adm:logEntry        bda:LGE03EA9844C662CC1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bdr:R10MS14280  a       :Role ;
+        skos:prefLabel      "zhe chen rab 'byams pa/"@bo-x-ewts , "Throne-Holder at Zhechen Monastery"@en ;
+        :isRoot             true .
+}

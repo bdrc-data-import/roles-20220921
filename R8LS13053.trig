@@ -1,0 +1,40 @@
+@base          <bdg:R8LS13053> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R8LS13053 {
+    bda:LGBB22C94A1FBB0903
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-03-21T16:20:25.213Z"^^xsd:dateTime ;
+        adm:logMessage      "added english desc."@en .
+    
+    bda:LGFB4F706BDFEA72EF
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-14T16:48:54.285Z"^^xsd:dateTime ;
+        adm:logMessage      "created new office"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:R8LS13053  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R8LS13053 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "13/R8LS13053.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R8LS13053 ;
+        adm:logEntry        bda:LGBB22C94A1FBB0903 , bda:LGFB4F706BDFEA72EF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R8LS13053  a        :Role ;
+        skos:prefLabel      "kaH thog si tu sku phreng rim byon gyi skye brgyud/"@bo-x-ewts , "Katok Situ Tulku Line"@en ;
+        :isRoot             true .
+}

@@ -1,0 +1,47 @@
+@base          <bdg:R8LS12907> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R8LS12907 {
+    bda:LG48E5F263D2CCD3FD
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-07T10:07:09.392Z"^^xsd:dateTime ;
+        adm:logMessage      "spelling corrected"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG807A4CE804A8977E
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-03T13:46:27.191Z"^^xsd:dateTime ;
+        adm:logMessage      "created new office"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGF244A144ED9E0D61
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-07-11T14:36:44.394Z"^^xsd:dateTime ;
+        adm:logMessage      "added phonetic title"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:R8LS12907  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R8LS12907 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "98/R8LS12907.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R8LS12907 ;
+        adm:logEntry        bda:LG48E5F263D2CCD3FD , bda:LG807A4CE804A8977E , bda:LGF244A144ED9E0D61 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R8LS12907  a        :Role ;
+        skos:prefLabel      "'brug pa chos mgon sprul sku'i skye brgyud/"@bo-x-ewts , "Drukpa Chogon Tulku Line"@en ;
+        :isRoot             true .
+}

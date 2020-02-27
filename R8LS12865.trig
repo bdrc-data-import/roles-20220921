@@ -1,0 +1,46 @@
+@base          <bdg:R8LS12865> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R8LS12865 {
+    bda:LG24D28F578B368D8A
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-03-24T14:21:06.588Z"^^xsd:dateTime ;
+        adm:logMessage      "added eng desc"@en .
+    
+    bda:LG88F606000E13B2FF
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-02T16:03:23.86Z"^^xsd:dateTime ;
+        adm:logMessage      "language changed"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGEF466DBE33767935
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-02T15:31:10.268Z"^^xsd:dateTime ;
+        adm:logMessage      "created new office"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:R8LS12865  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R8LS12865 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b9/R8LS12865.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R8LS12865 ;
+        adm:logEntry        bda:LG24D28F578B368D8A , bda:LG88F606000E13B2FF , bda:LGEF466DBE33767935 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R8LS12865  a        :Role ;
+        skos:prefLabel      "dga' ldan gling sprul sku skye brgyud/"@bo-x-ewts , "Ganden Ling Tulku Line"@en ;
+        :isRoot             true .
+}

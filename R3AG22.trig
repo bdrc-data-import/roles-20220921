@@ -1,0 +1,52 @@
+@base          <bdg:R3AG22> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R3AG22 {
+    bda:LG3346320645F70EFC
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-06T16:35:07.305Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGB4650F32F41967EE
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-06-14T15:14:25.12Z"^^xsd:dateTime ;
+        adm:logMessage      "edited title"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGCDD9030217B9949F
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-06T16:40:09.085Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGD71C878317591AA0
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-06T16:56:41.487Z"^^xsd:dateTime ;
+        adm:logMessage      "language encoding"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:R3AG22  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R3AG22 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7b/R3AG22.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R3AG22 ;
+        adm:logEntry        bda:LG3346320645F70EFC , bda:LGB4650F32F41967EE , bda:LGCDD9030217B9949F , bda:LGD71C878317591AA0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R3AG22  a           :Role ;
+        skos:prefLabel      "rje mkhan po/"@bo-x-ewts , "Je Khenpo"@en ;
+        :isRoot             true .
+}

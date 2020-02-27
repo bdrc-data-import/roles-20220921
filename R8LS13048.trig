@@ -1,0 +1,42 @@
+@base          <bdg:R8LS13048> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R8LS13048 {
+    bda:LG07AA1C0E99AD05DF
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-14T14:26:47.319Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favour of R10MS14279"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG5755AB25309AEA88
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-14T14:19:29.348Z"^^xsd:dateTime ;
+        adm:logMessage      "created new office"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:R8LS13048  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R8LS13048 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "00/R8LS13048.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R8LS13048 ;
+        adm:logEntry        bda:LG07AA1C0E99AD05DF , bda:LG5755AB25309AEA88 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:R10MS14279 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:R8LS13048  a        :Role ;
+        skos:prefLabel      "paN chen sku phreng rim byon gyi skye brgyud/"@bo-x-ewts ;
+        :isRoot             true .
+}

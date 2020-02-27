@@ -1,0 +1,76 @@
+@base          <bdg:R35> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R35 {
+    bda:LG02EC95ADD844E202
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-27T15:41:50.834Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG151F6DFE741196F7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-23T16:21:59.956Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG2546CB0295702794
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-12-01T11:58:32.1Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG3746DFFBB8532FD8
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-12-01T17:07:52.895Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG4413B4EA73726AFB
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-06-14T15:10:35.436Z"^^xsd:dateTime ;
+        adm:logMessage      "edited title"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG667D0A29B3CD2C7C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-30T17:02:04.68Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG77C75B130C18C702
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-06-14T11:29:14.106Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG87F2A692ABF6CACA
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-27T15:53:35.438Z"^^xsd:dateTime ;
+        adm:logMessage      "added English"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGB08931ACC0FCB419
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-23T10:32:38.228Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:R35  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R35 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "e6/R35.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R35 ;
+        adm:logEntry        bda:LG02EC95ADD844E202 , bda:LG151F6DFE741196F7 , bda:LG2546CB0295702794 , bda:LG3746DFFBB8532FD8 , bda:LG4413B4EA73726AFB , bda:LG667D0A29B3CD2C7C , bda:LG77C75B130C18C702 , bda:LG87F2A692ABF6CACA , bda:LGB08931ACC0FCB419 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R35  a              :Role ;
+        skos:prefLabel      "dga' ldan khri pa/"@bo-x-ewts , "Ganden Monastery Throne-Holder"@en ;
+        :isRoot             true .
+}

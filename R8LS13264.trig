@@ -1,0 +1,40 @@
+@base          <bdg:R8LS13264> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R8LS13264 {
+    bda:LGC426EA280B919806
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-03-21T16:27:53.088Z"^^xsd:dateTime ;
+        adm:logMessage      "added eng desc."@en .
+    
+    bda:LGEE7CAE5F538DC79F
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-03-05T10:55:31.327Z"^^xsd:dateTime ;
+        adm:logMessage      "created new person record"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:R8LS13264  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R8LS13264 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c7/R8LS13264.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R8LS13264 ;
+        adm:logEntry        bda:LGC426EA280B919806 , bda:LGEE7CAE5F538DC79F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R8LS13264  a        :Role ;
+        skos:prefLabel      "ko'u sde ban sngags kyi skye brgyud/"@bo-x-ewts , "Koude Bennak Tulku Line"@en ;
+        :isRoot             true .
+}

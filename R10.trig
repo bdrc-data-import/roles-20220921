@@ -1,0 +1,50 @@
+@base          <bdg:R10> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R10 {
+    bda:LG25A5E18B72F1E8D7
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-06-14T14:43:08.455Z"^^xsd:dateTime ;
+        adm:logMessage      "edited title"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG5CE9059EC0C034BB
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-06-15T08:58:22.587Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG67395119BAE373D1
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-06-17T10:51:51.607Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG89C8A6122AA0AF95
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-22T11:46:11.324Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:R10  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R10 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "33/R10.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R10 ;
+        adm:logEntry        bda:LG25A5E18B72F1E8D7 , bda:LG5CE9059EC0C034BB , bda:LG67395119BAE373D1 , bda:LG89C8A6122AA0AF95 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R10  a              :Role ;
+        skos:prefLabel      "drung yig chen po/"@bo-x-ewts , "Chief Ecclesiastical Secretary"@en ;
+        :isRoot             true .
+}

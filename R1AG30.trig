@@ -1,0 +1,40 @@
+@base          <bdg:R1AG30> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R1AG30 {
+    bda:LG106B2226135C3F8D
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-06-17T11:47:42.742Z"^^xsd:dateTime ;
+        adm:logMessage      "created R1AG30"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGBFEF6403BF2A78AF
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-06-17T12:37:48.414Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:R1AG30  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R1AG30 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "56/R1AG30.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R1AG30 ;
+        adm:logEntry        bda:LG106B2226135C3F8D , bda:LGBFEF6403BF2A78AF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R1AG30  a           :Role ;
+        skos:prefLabel      "dge rtse ge tog sprul sku'i skye brgyud/"@bo-x-ewts , "getse getok tulku line"@en ;
+        :isRoot             true .
+}

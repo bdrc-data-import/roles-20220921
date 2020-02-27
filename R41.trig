@@ -1,0 +1,35 @@
+@base          <bdg:R41> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R41 {
+    bda:LGE79E08962715B769
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-06-14T13:50:52.296Z"^^xsd:dateTime ;
+        adm:logMessage      "edited title"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:R41  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R41 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "f9/R41.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R41 ;
+        adm:logEntry        bda:LGE79E08962715B769 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R41  a              :Role ;
+        skos:prefLabel      "yongs 'dzin/"@bo-x-ewts , "tutor"@en ;
+        :isRoot             true .
+}

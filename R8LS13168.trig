@@ -1,0 +1,51 @@
+@base          <bdg:R8LS13168> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R8LS13168 {
+    bda:LG39EC1791EE277867
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-09-03T15:53:17.605Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGBD561096E7AD8658
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-07-11T13:33:51.626Z"^^xsd:dateTime ;
+        adm:logMessage      "added phonetic title"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGC01BD15D6F68CB77
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-01T11:13:06.874Z"^^xsd:dateTime ;
+        adm:logMessage      "created new office"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGCA807A0548BC2F46
+        a                   adm:LogEntry ;
+        adm:logDate         "2016-04-13T11:49:37.147Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:R8LS13168  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R8LS13168 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "72/R8LS13168.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R8LS13168 ;
+        adm:logEntry        bda:LG39EC1791EE277867 , bda:LGBD561096E7AD8658 , bda:LGC01BD15D6F68CB77 , bda:LGCA807A0548BC2F46 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R8LS13168  a        :Role ;
+        skos:prefLabel      "lha sprul skye brgyud/"@bo-x-ewts , "Lhatrul Tulku Line"@en ;
+        :isRoot             true .
+}

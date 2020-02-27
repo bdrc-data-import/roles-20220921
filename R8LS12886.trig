@@ -1,0 +1,46 @@
+@base          <bdg:R8LS12886> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R8LS12886 {
+    bda:LG32A451ABFD3588F0
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-03T09:29:59.136Z"^^xsd:dateTime ;
+        adm:logMessage      "created new office"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGB0B4EF50880043FC
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-09-03T10:17:34.576Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGC784BE618D101A7C
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-07-11T14:30:51.997Z"^^xsd:dateTime ;
+        adm:logMessage      "added phonetic title"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:R8LS12886  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R8LS12886 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "13/R8LS12886.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R8LS12886 ;
+        adm:logEntry        bda:LG32A451ABFD3588F0 , bda:LGB0B4EF50880043FC , bda:LGC784BE618D101A7C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R8LS12886  a        :Role ;
+        skos:prefLabel      "'bri gung che tshang sprul sku skye brgyud/"@bo-x-ewts , "Drikung Chetsang Tulku Line"@en ;
+        :isRoot             true .
+}

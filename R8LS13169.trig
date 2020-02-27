@@ -1,0 +1,46 @@
+@base          <bdg:R8LS13169> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R8LS13169 {
+    bda:LG45130DECA8A6CCCC
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-09-03T10:12:10.846Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGCC48DEE7ABE8409C
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-01T12:39:23.739Z"^^xsd:dateTime ;
+        adm:logMessage      "created new office"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGF9E4F9CA3BF7B0AF
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-07-11T10:56:23.124Z"^^xsd:dateTime ;
+        adm:logMessage      "added phonetic title"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:R8LS13169  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R8LS13169 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "9d/R8LS13169.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R8LS13169 ;
+        adm:logEntry        bda:LG45130DECA8A6CCCC , bda:LGCC48DEE7ABE8409C , bda:LGF9E4F9CA3BF7B0AF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R8LS13169  a        :Role ;
+        skos:prefLabel      "rdo grub chen gyi skye brgyud/"@bo-x-ewts , "Dodrubchen Tulku Line"@en ;
+        :isRoot             true .
+}

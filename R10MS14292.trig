@@ -1,0 +1,52 @@
+@base          <bdg:R10MS14292> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R10MS14292 {
+    bda:LG531530A0C3E174F2
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-05-22T11:15:47.059Z"^^xsd:dateTime ;
+        adm:logMessage      "office dates, teacher and student"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGDD0732A726C38518
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-07-06T11:52:18.845Z"^^xsd:dateTime ;
+        adm:logMessage      "edited e waM name in note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGDD72E488C7D147C9
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-07-06T11:47:44.714Z"^^xsd:dateTime ;
+        adm:logMessage      "created new office"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:R10MS14292  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R10MS14292 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "8d/R10MS14292.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R10MS14292 ;
+        adm:logEntry        bda:LG531530A0C3E174F2 , bda:LGDD0732A726C38518 , bda:LGDD72E488C7D147C9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3A9FDF0CA5D0945C
+        a                   :Note ;
+        :noteText           "this office title is for those who were abbots at ngor e waM chos ldan"@en .
+    
+    bdr:R10MS14292  a       :Role ;
+        skos:prefLabel      "ngor mkhan chen/"@bo-x-ewts , "Ngor Khenchen"@en ;
+        :isRoot             true ;
+        :note               bdr:NT3A9FDF0CA5D0945C .
+}

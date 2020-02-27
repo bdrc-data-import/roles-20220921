@@ -1,0 +1,42 @@
+@base          <bdg:R1AG104> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R1AG104 {
+    bda:LG3A265F4E263B8D34
+        a                   adm:LogEntry ;
+        adm:logDate         "2017-03-07T09:48:50.166Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG3A8616E1AC7705C2
+        a                   adm:LogEntry ;
+        adm:logDate         "2017-03-07T09:58:42.011Z"^^xsd:dateTime ;
+        adm:logMessage      "created incarnation link"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:R1AG104  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R1AG104 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ec/R1AG104.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R1AG104 ;
+        adm:logEntry        bda:LG3A265F4E263B8D34 , bda:LG3A8616E1AC7705C2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R1AG104  a          :Role ;
+        skos:altLabel       "Dzigar Tulku/"@bo-x-ewts ;
+        skos:prefLabel      "'dzi sgar sprul sku/"@bo-x-ewts ;
+        :isRoot             true .
+}

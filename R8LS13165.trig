@@ -1,0 +1,48 @@
+@base          <bdg:R8LS13165> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R8LS13165 {
+    bda:LG13A8BDFD070C139F
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-03-17T09:01:01.954Z"^^xsd:dateTime ;
+        adm:logMessage      "office name changed"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG298CEF7EBF0A32DB
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-31T16:07:18.803Z"^^xsd:dateTime ;
+        adm:logMessage      "created new office"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG6B9CBEF1BCF9D568
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-25T16:06:45.145Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favour of R8LS13249"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:R8LS13165  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R8LS13165 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "73/R8LS13165.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R8LS13165 ;
+        adm:logEntry        bda:LG13A8BDFD070C139F , bda:LG298CEF7EBF0A32DB , bda:LG6B9CBEF1BCF9D568 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:R8LS13249 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:R8LS13165  a        :Role ;
+        skos:prefLabel      "nyi grags rgyal sras kyi skye brgyud/"@bo-x-ewts ;
+        :isRoot             true .
+}

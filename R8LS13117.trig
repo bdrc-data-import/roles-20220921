@@ -1,0 +1,41 @@
+@base          <bdg:R8LS13117> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R8LS13117 {
+    bda:LG5030D0C296AED6DF
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-25T11:05:06.868Z"^^xsd:dateTime ;
+        adm:logMessage      "created new office"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGA3557564968E3FBA
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-07-10T15:38:23.819Z"^^xsd:dateTime ;
+        adm:logMessage      "added phonetic title"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:R8LS13117  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R8LS13117 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "06/R8LS13117.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R8LS13117 ;
+        adm:logEntry        bda:LG5030D0C296AED6DF , bda:LGA3557564968E3FBA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R8LS13117  a        :Role ;
+        skos:prefLabel      "rnye grub chen gyi skye brgyud/"@bo-x-ewts , "Nye Drubchen Tulku Line"@en ;
+        :isRoot             true .
+}

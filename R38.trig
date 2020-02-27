@@ -1,0 +1,47 @@
+@base          <bdg:R38> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R38 {
+    bda:LG0E8BBC89EF9B5603
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-06-14T15:12:52.893Z"^^xsd:dateTime ;
+        adm:logMessage      "edited title"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG1054902CB0A85040
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-27T15:48:12.344Z"^^xsd:dateTime ;
+        adm:logMessage      "added English"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG5A5375F5537D609C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-27T15:52:51.466Z"^^xsd:dateTime ;
+        adm:logMessage      "added English"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:R38  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R38 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7a/R38.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R38 ;
+        adm:logEntry        bda:LG0E8BBC89EF9B5603 , bda:LG1054902CB0A85040 , bda:LG5A5375F5537D609C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R38  a              :Role ;
+        skos:prefLabel      "dpon slob/"@bo-x-ewts , "Headmaster"@en ;
+        :isRoot             true .
+}

@@ -1,0 +1,51 @@
+@base          <bdg:R8LS13030> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R8LS13030 {
+    bda:LG19588EA5D213A20A
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-07-10T15:37:04.916Z"^^xsd:dateTime ;
+        adm:logMessage      "added phonetic title"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG20B81C71970A5C22
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-09-08T11:18:31.309Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG676A732A1CD0BD87
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-09-08T12:58:24Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00036 .
+    
+    bda:LGD26ACE31F1523306
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-11T14:51:51.657Z"^^xsd:dateTime ;
+        adm:logMessage      "created new office"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:R8LS13030  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R8LS13030 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1a/R8LS13030.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R8LS13030 ;
+        adm:logEntry        bda:LG19588EA5D213A20A , bda:LG20B81C71970A5C22 , bda:LG676A732A1CD0BD87 , bda:LGD26ACE31F1523306 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R8LS13030  a        :Role ;
+        skos:prefLabel      "mnyes thang smog lcog sprul sku'i skye brgyud/"@bo-x-ewts , "Nyetang Mokchok Tulku Line"@en ;
+        :isRoot             true .
+}

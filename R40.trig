@@ -1,0 +1,41 @@
+@base          <bdg:R40> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R40 {
+    bda:LGA881ED2A2E2ADED2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-27T16:01:33.667Z"^^xsd:dateTime ;
+        adm:logMessage      "added english"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGBCCECE4886DA88DE
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-06-14T15:16:48.305Z"^^xsd:dateTime ;
+        adm:logMessage      "edited title"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:R40  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R40 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b8/R40.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R40 ;
+        adm:logEntry        bda:LGA881ED2A2E2ADED2 , bda:LGBCCECE4886DA88DE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R40  a              :Role ;
+        skos:prefLabel      "spyi khyab mkhan po/"@bo-x-ewts , "Government Preceptor"@en ;
+        :isRoot             true .
+}

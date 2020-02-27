@@ -1,0 +1,47 @@
+@base          <bdg:R8LS12868> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:R8LS12868 {
+    bda:LG2540A91E346EEA3C
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-02T16:07:44.142Z"^^xsd:dateTime ;
+        adm:logMessage      "language changed"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG7D99057135A46C36
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-07-31T13:16:56.677Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGAA5ECD18B6A52203
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-02T15:47:34.275Z"^^xsd:dateTime ;
+        adm:logMessage      "created new office"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:R8LS12868  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:R8LS12868 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ec/R8LS12868.trig" ;
+        adm:gitRepo         bda:GR0010 ;
+        adm:graphId         bdg:R8LS12868 ;
+        adm:logEntry        bda:LG2540A91E346EEA3C , bda:LG7D99057135A46C36 , bda:LGAA5ECD18B6A52203 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:R8LS12868  a        :Role ;
+        skos:prefLabel      "bsam sdings rdo rje phag mo sprul sku skye brgyud/"@bo-x-ewts , "Samding Dorje Pakmo Tulku Line"@en ;
+        :isRoot             true .
+}
