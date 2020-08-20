@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,38 +13,38 @@
 
 bdg:R8LS13203 {
     bda:LG2A85968CAB9713B2
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2014-09-08T11:13:56.139Z"^^xsd:dateTime ;
         adm:logMessage      "added phonetic title"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG3705A7922755DA4D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2014-09-08T12:22:57.275Z"^^xsd:dateTime ;
         adm:logMessage      "corrected encoding and language of english description"@en ;
-        adm:logWho          bdr:U00036 .
+        adm:logWho          bdu:U00036 .
     
     bda:LG3FF8F63F9354F271
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2014-09-03T10:05:33.43Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:LG7A88C33771D0A0B0
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2014-03-24T14:21:06.991Z"^^xsd:dateTime ;
         adm:logMessage      "added eng desc"@en .
     
     bda:LGD1D8717F00614458
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2013-02-08T10:45:34.66Z"^^xsd:dateTime ;
         adm:logMessage      "created new office"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:LGF0123EEC0DFFE4F9
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2014-07-30T19:22:42.37Z"^^xsd:dateTime ;
         adm:logMessage      "fixed eng names"@en ;
-        adm:logWho          bdr:U00012 .
+        adm:logWho          bdu:U00012 .
     
     bda:R8LS13203  a        adm:AdminData ;
         :isRoot             true ;
