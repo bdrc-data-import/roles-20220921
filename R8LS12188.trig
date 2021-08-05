@@ -40,6 +40,7 @@ bdg:R8LS12188 {
         adm:status          bda:StatusReleased .
     
     bdr:R8LS12188  a        :Role ;
-        skos:prefLabel      "gdan sa/"@bo-x-ewts , "throne holder"@en ;
+        skos:altLabel       "throne holder"@en ;
+        skos:prefLabel      "gdan sa"@en ;
         :isRoot             true .
 }

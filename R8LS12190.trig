@@ -30,6 +30,7 @@ bdg:R8LS12190 {
         adm:status          bda:StatusReleased .
     
     bdr:R8LS12190  a        :Role ;
-        skos:prefLabel      "smin gling khri chen/"@bo-x-ewts , "throne holder of mindroling monastery"@en ;
+        skos:altLabel       "throne holder of mindroling monastery"@en ;
+        skos:prefLabel      "smin gling khri chen"@en ;
         :isRoot             true .
 }

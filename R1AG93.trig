@@ -29,6 +29,6 @@ bdg:R1AG93 {
         adm:status          bda:StatusReleased .
     
     bdr:R1AG93  a           :Role ;
-        skos:prefLabel      "pad gling srung sprul/"@bo-x-ewts ;
+        skos:prefLabel      "pad gling srung sprul"@en ;
         :isRoot             true .
 }
