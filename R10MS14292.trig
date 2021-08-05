@@ -46,8 +46,7 @@ bdg:R10MS14292 {
         :noteText           "this office title is for those who were abbots at ngor e waM chos ldan"@en .
     
     bdr:R10MS14292  a       :Role ;
-        skos:altLabel       "Ngor Khenchen"@en ;
-        skos:prefLabel      "ngor mkhan chen"@en ;
+        skos:prefLabel      "ngor mkhan chen/"@bo-x-ewts , "Ngor Khenchen"@en ;
         :isRoot             true ;
         :note               bdr:NT3A9FDF0CA5D0945C .
 }
