@@ -52,7 +52,7 @@ bdg:R8LS13428 {
         adm:status          bda:StatusReleased .
     
     bdr:R8LS13428  a        :Role ;
-        skos:altLabel       "Gotsang Gelong Tulku Line/"@bo-x-ewts ;
+        skos:altLabel       "Gotsang Gelong Tulku Line"@bo-x-phon-en-m-tbrc ;
         skos:prefLabel      "mgo tshang dge slong gi skye brgyud/"@bo-x-ewts ;
         :isRoot             true .
 }
